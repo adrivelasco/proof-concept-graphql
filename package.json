@@ -1,0 +1,19 @@
+{
+  "name": "proof-concept-graphql",
+  "version": "1.0.0",
+  "description": "Proof concept GraphQL node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andreybejaranobondacom/proof-concept-graphql.git"
+  },
+  "author": "Andrey Bejarano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreybejaranobondacom/proof-concept-graphql/issues"
+  },
+  "homepage": "https://github.com/andreybejaranobondacom/proof-concept-graphql#readme"
+}
