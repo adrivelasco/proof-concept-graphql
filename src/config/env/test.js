@@ -1,7 +1,7 @@
 module.exports = {
   cupona: {
     basePatch: 'http://localhost/sites',
-    consumer: process.env.CONSUMER_KEY
+    consumer: '0987654321'
   },
   env: 'test',
   port: 3001
