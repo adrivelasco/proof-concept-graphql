@@ -8,7 +8,7 @@ const config = require('../../config');
 class Service {
   async getBranches() {
     try {
-      const url = uriParser.parser(config.endpoints.branches, {site: 'daQm9M4qejxl'});
+      const url = uriParser.parser(config.endpoints.branches, { site: 'daQm9M4qejxl' });
       const options = {
         method: 'GET',
         uri: url,

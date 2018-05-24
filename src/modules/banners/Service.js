@@ -8,7 +8,7 @@ const config = require('../../config');
 class Service {
   async getBanners() {
     try {
-      const url = uriParser.parser(config.endpoints.banners, {site: 'daQm9M4qejxl'});
+      const url = uriParser.parser(config.endpoints.banners, { site: 'daQm9M4qejxl' });
       const options = {
         method: 'GET',
         uri: url,

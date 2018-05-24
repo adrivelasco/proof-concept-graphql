@@ -25,5 +25,5 @@ app.use(
   }));
 
 app.listen(port, () => {
-  console.log(`Go to http://localhost:${port}/graphiql to run queries!`);
+  console.log(`Go to http://localhost:${port}/graphiql to run queries! "enviroment": ${config.env}`);
 });
