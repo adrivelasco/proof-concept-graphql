@@ -4,7 +4,10 @@
   "description": "Proof concept GraphQL node.js",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg",
     "lint": "eslint --fix .",
+    "precommit": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "start:dev": "nodemon index.js"
@@ -39,12 +42,15 @@
     "uriparser": "https://github.com/andreybejarano/uriparser.git"
   },
   "devDependencies": {
+    "commitizen": "^2.10.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
-    "nodemon": "^1.17.5"
+    "husky": "^0.14.3",
+    "nodemon": "^1.17.5",
+    "validate-commit-msg": "^2.14.0"
   }
 }
