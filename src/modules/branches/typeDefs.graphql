@@ -1,0 +1,16 @@
+type Branche {
+  id: String,
+  name: String,
+  address: String,
+  district: String,
+  locality: String,
+  province: String,
+  latitude: Float,
+  longitude: Float,
+  phone: String,
+  identifier: String
+}
+
+type Query {
+  branches: [Branche]
+}

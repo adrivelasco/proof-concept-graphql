@@ -37,6 +37,7 @@
     "express": "^4.16.3",
     "graphql": "^0.13.2",
     "graphql-tools": "^3.0.2",
+    "merge-graphql-schemas": "^1.5.1",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
     "uriparser": "https://github.com/andreybejarano/uriparser.git"
@@ -50,6 +51,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
+    "graphql-apollo-errors": "^2.0.3",
     "husky": "^0.14.3",
     "jest": "^23.0.0",
     "nock": "^9.2.6",
