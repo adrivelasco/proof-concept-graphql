@@ -29,9 +29,9 @@ Before you start, take a moment to see how the project structure looks like:
 ├── /node_modules/                  # 3rd-party libraries and utilities
 ├── /src/                           # Source Node.js-GraphpQL API
 │   ├── /config/                    # Configuration by enviroment and endpoints
-│   │   │   ├── /env/               # Configuration by enviroment
-│   │   │   ├── endpoints.js        # Endpoints services
-│   │   │   └── index.js            # Merged configuration by enviroment and endpoints
+│   │   ├── /env/               # Configuration by enviroment
+│   │   ├── endpoints.js        # Endpoints services
+│   │   └── index.js            # Merged configuration by enviroment and endpoints
 │   ├── /core/                      # Configuration Server graphQL
 │   ├── /modules/                   # Source modules
 │   │   ├── /module1/               # Module 1 Sources files
