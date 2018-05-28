@@ -24,6 +24,28 @@ class Service {
       return Promise.reject(error);
     }
   }
+
+  async getBannersByType(type) {
+    try {
+      const url = uriParser.parser(config.endpoints.banners, { site: 'daQm9M4qejxl' });
+      const options = {
+        method: 'GET',
+        uri: url,
+        json: true,
+        qs: {
+          type: type
+        },
+        headers: {
+          'Consumer-key': `${config.cupona.consumer}`
+        },
+        resolveWithFullResponse: true
+      };
+      const response = await request(options);
+      return response;
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  }
 }
 
 module.exports = Service;

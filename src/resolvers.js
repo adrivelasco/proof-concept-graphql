@@ -1,9 +1,6 @@
-const Banners = require('./modules/banners/Resolver');
-const Branches = require('./modules/branches/Resolver');
+const path = require('path');
+const { fileLoader, mergeResolvers } = require('merge-graphql-schemas');
 
-module.exports = {
-  Query: {
-    banners: () => Banners.getBanners(),
-    branches: () => Branches.getBranches()
-  }
-};
+const resolversArray = fileLoader(path.join(__dirname, './modules/**/Resolver.js'));
+
+module.exports = mergeResolvers(resolversArray);
