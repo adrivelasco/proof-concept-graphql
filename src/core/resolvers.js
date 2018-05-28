@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * Merged all resolver modules an return resolvers merged
+ */
 const path = require('path');
 const { fileLoader, mergeResolvers } = require('merge-graphql-schemas');
 
