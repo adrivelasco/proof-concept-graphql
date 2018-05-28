@@ -1,9 +1,9 @@
-const Service = require('./Service');
-const service = new Service();
+const Connector = require('./Connector');
+const connector = new Connector();
 
 class Model {
   async getBranches() {
-    const branches = await service.getBranches();
+    const branches = await connector.getBranches();
     return branches.body.data;
   }
 }

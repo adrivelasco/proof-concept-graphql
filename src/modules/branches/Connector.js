@@ -5,7 +5,7 @@ const uriParser = require('uriparser');
 
 const config = require('../../config');
 
-class Service {
+class Connector {
   async getBranches() {
     try {
       const url = uriParser.parser(config.endpoints.branches, { site: 'daQm9M4qejxl' });
@@ -26,4 +26,4 @@ class Service {
   }
 }
 
-module.exports = Service;
+module.exports = Connector;

@@ -5,7 +5,7 @@ const uriParser = require('uriparser');
 
 const config = require('../../config');
 
-class Service {
+class Connector {
   async getBanners() {
     try {
       const url = uriParser.parser(config.endpoints.banners, { site: 'daQm9M4qejxl' });
@@ -48,4 +48,4 @@ class Service {
   }
 }
 
-module.exports = Service;
+module.exports = Connector;
