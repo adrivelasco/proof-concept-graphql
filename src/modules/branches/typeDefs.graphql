@@ -1,4 +1,4 @@
-type Branche {
+type Branch {
   id: String,
   name: String,
   address: String,
@@ -12,5 +12,5 @@ type Branche {
 }
 
 type Query {
-  branches: [Branche]
+  branches: [Branch]
 }

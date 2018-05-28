@@ -3,27 +3,14 @@
 // Loading enviroment variables
 require('dotenv').config();
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
+const app = require('express')();
 
 const config = require('./config');
-const schema = require('./schema');
 
-const app = express();
-const port = config.port;
+const routes = require('./core/routes');
 
-app.use(
-  '/graphql',
-  bodyParser.json(),
-  graphqlExpress({ schema }));
+app.use(routes);
 
-app.use(
-  '/graphiql',
-  graphiqlExpress({
-    endpointURL: '/graphql'
-  }));
-
-app.listen(port, () => {
-  console.log(`Go to http://localhost:${port}/graphiql to run queries! "enviroment": ${config.env}`);
+app.listen(config.port, () => {
+  console.log(`Go to http://localhost:${config.port}/graphiql to run queries! "enviroment": ${config.env}`);
 });
