@@ -48,7 +48,7 @@ Before you start, take a moment to see how the project structure looks like:
 │   │   │
 │   │   └── ...
 │   │
-│   └── api.js                      # Require Midellwares for start server
+│   └── api.js                      # Require middlewares for start server
 │
 ├── index.js                        # Main File
 └── package.json                    # The list of 3rd party libraries and utilities
