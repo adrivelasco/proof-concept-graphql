@@ -3,14 +3,14 @@
 const nock = require('nock');
 const uriParser = require('uriparser');
 
-const Service = require('../../src/modules/branches/Service');
+const Connector = require('../../src/modules/branches/Connector');
 
 const config = require('../../src/config');
 const stubs = require('../stubs/branches');
 const fixtures = require('../fixtures/site');
 
 describe('Branches Service', () => {
-  const service = new Service();
+  const connector = new Connector();
   it('should getBranches', async () => {
     const branches = stubs.getBranches();
     const siteId = fixtures.getSiteConfig().id;
@@ -20,9 +20,9 @@ describe('Branches Service', () => {
       .get('')
       .reply(200, branches);
 
-    expect(typeof service.getBranches).toBe('function');
+    expect(typeof connector.getBranches).toBe('function');
 
-    const result = await service.getBranches();
+    const result = await connector.getBranches();
 
     expect(result.body).toEqual(branches);
   });
