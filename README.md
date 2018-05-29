@@ -35,13 +35,13 @@ Before you start, take a moment to see how the project structure looks like:
 │   ├── /core/                      # Configuration Server graphQL
 │   ├── /modules/                   # Source modules
 │   │   ├── /module1/               # Module 1 Sources files
-│   │   │   ├── Conector.js         # Request or conection for get or send data(Servide or DadaBase)
+│   │   │   ├── Connector.js        # Request or connection for get or send data(Servide or DadaBase)
 │   │   │   ├── Model.js            # Data Model and transformers necesaries
 │   │   │   ├── Resolver.js         # Endpoints GraphQL(Query, Mutations, etc)
 │   │   │   └── typeDefs.graphql    # Types definitions GraphQL
 │   │   │
 │   │   ├── /module2/               # Module 2 Sources files
-│   │   │   ├── Conector.js         # Request or conection for get or send data(Servide or DadaBase)
+│   │   │   ├── Connector.js        # Request or connection for get or send data(Servide or DadaBase)
 │   │   │   ├── Model.js            # Data Model and transformers necesaries
 │   │   │   ├── Resolver.js         # Endpoints GraphQL(Query, Mutations, etc)
 │   │   │   └── typeDefs.graphql    # Types definitions GraphQL
