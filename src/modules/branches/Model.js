@@ -1,3 +1,5 @@
+'use strict';
+
 const Connector = require('./Connector');
 const connector = new Connector();
 
