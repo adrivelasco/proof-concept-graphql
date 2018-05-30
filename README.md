@@ -9,6 +9,7 @@ Proof concept GraphQL node.js
   * [Run Development](#run-development)
   * [Run Production](#run-production)
   * [Run Test](#run-test)
+  * [Run create New Module](#run-create-new-module)
   * [Run Linter](#run-linter)
 * [GraphiQL](#graphiql)
 
@@ -79,5 +80,11 @@ $ npm run test
 ```
 $ npm run lint
 ```
+### Run create New Module
+For create new module with template stack files run this command
+```
+$ npm run newmodule
+```
+
 ## GraphiQL
 [http://localhost:3000/graphiql]()

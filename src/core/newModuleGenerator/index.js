@@ -71,7 +71,7 @@ class Module {
       const files = this.FilesContent(path.resolve(__dirname, './module'));
       const result = this.createFiles(`${basePath}/${nameModule}`, files);
       if (result) {
-        logger.info(`\n Module "${nameModule}" created, Ready Go! \n`);
+        logger.info(`\n Module "${nameModule}" created, Ready Go to ${basePath}/${nameModule} \n`);
       }
       rl.close();
     });
