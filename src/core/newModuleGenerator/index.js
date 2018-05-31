@@ -72,9 +72,36 @@ class Module {
       const result = this.createFiles(`${basePath}/${nameModule}`, files);
       if (result) {
         logger.info(`\n Module "${nameModule}" created, Ready Go to ${basePath}/${nameModule} \n`);
+        this.createTest(nameModule);
       }
+
       rl.close();
     });
+  }
+
+  createTest(nameModule) {
+    try {
+      const basePath = path.resolve(__dirname, '../../../test');
+      const hasDirectory = this.hasDirectory(`${basePath}/${nameModule}`);
+      if (hasDirectory) {
+        logger.warn(`\n ${nameModule} Module exist, change or verify name and run again! \n`);
+        process.exit(0);
+      }
+      this.createDirectory(`${basePath}/${nameModule}`);
+
+      const files = this.FilesContent(path.resolve(__dirname, './test'));
+
+      for (const file of files) {
+        file.content = file.content.replace(/<%nameModule%>/g, nameModule);
+      }
+
+      const result = this.createFiles(`${basePath}/${nameModule}`, files);
+      if (result) {
+        logger.info(`\n test "${nameModule}" created, Ready Go to ${basePath}/${nameModule} \n`);
+      }
+    } catch (error) {
+      return false;
+    }
   }
 
   FilesContent(directoryUrl) {

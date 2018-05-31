@@ -3,10 +3,12 @@
         "commonjs": true,
         "es6": true,
         "node": true,
-        "jasmine": true
+        "jasmine": true,
+        "jest/globals": true
     },
     "plugins": [
-      "jasmine"
+      "jasmine",
+      "jest"
     ],
     "extends": [
       "standard",

@@ -83,7 +83,7 @@ $ npm run lint
 ### Run create New Module
 For create new module with template stack files run this command
 ```
-$ npm run newmodule
+$ npm run new:module
 ```
 
 ## GraphiQL
